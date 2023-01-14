@@ -1,0 +1,226 @@
+@import url('https://fonts.cdnfonts.com/css/amazon-ember');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'amazon-ember', sans-serif;
+}
+/* First Navbar */
+#navbar1 {
+  height: 7vh;
+  background-color: rgb(19,25,33);
+  display: flex;
+  align-items: center;
+}
+#navbar1 ul {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  list-style: none;
+  padding-left: 1rem;
+}
+#navbar1 li {
+  margin-left: 1rem;
+}
+#navbar1 a {
+  text-decoration: none;
+}
+
+.logo {
+  width: 80px;
+  margin-left: -20px;
+  margin-top: 0.5rem;
+  padding: 0.3rem;
+}
+.logo:hover {
+  border: white solid 1px;
+  cursor: pointer;
+}
+.smalltext {
+  color: #CCCC;
+  font-size: 0.7rem;
+}
+.bigtext {
+  color: #ffff;
+  font-size: 0.9rem;
+}
+
+#navbar1 input {
+  width: 50vw;
+  padding: 0.4rem;
+}
+.all {
+  border-radius: 20%;
+  padding: 0.5rem;
+  background-color: #F3F3F3;
+  margin-right: -2px;
+}
+.all:hover {
+  border: 2px solid rgb(243,168,71);
+}
+input:hover {
+  border: 2px solid rgb(243,168,71);
+}
+.search {
+  border-radius: 20%;
+  padding: 0.5rem;
+  background-color: rgb(243,168,71);
+  margin-left: -2px;
+}
+.navbutton {
+  padding: 0.3rem 0.3rem 0.1rem 0.8rem;
+}
+.navbutton:hover {
+  border: solid white 1px;
+}
+
+#navbar1 i {
+  display: inline;
+}
+/* 2ndnavbar */
+#navbar2 {
+  margin: 0;
+  padding: 0;
+}
+#navbar2menu {
+  margin: 0;
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: center;
+  height: 5.5vh;
+  background-color: rgb(35,47,62);
+  list-style: none;
+}
+
+#navbar2menu li {
+  font-weight: 500;
+font-size: 0.9rem;
+white-space: nowrap;
+color: rgb(255,255,255);
+padding: 0.3rem;
+}
+#navbar2menu li:hover {
+  border: 1px white solid;
+}
+#navbar2menu i {
+   margin-right: 0.4rem;
+}
+#navbar2menu a {
+  text-decoration: none;
+  padding-left: 0.5rem;
+}
+
+
+#directory {
+  display: flex;
+  list-style: none;
+  padding: 0px 0.6rem;
+  margin-top: 0.5rem;
+}
+#directory li {
+  margin: 0.2rem;
+  font-size: 0.7rem;
+  color: rgb(86,89,89);
+  padding-left: 0.4rem;
+}
+#directory a {
+  color: rgb(86,89,89);
+  text-decoration: none;
+}
+#directory a:hover {
+  text-decoration: underline;
+}
+#directory a:visited {
+  color: rgb(86,89,89);
+}
+
+.main {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "leftside leftside leftside middle middle middle middle middle  rightside rightside rightside"
+    "leftside leftside leftside middle middle middle middle middle  rightside rightside rightside"
+    "leftside leftside leftside middle middle middle middle middle  rightside rightside rightside"; 
+}
+
+.leftside {
+  grid-area: leftside;
+}
+.leftsidephoto {
+  position: sticky;
+  top: 0;
+  max-width: 100%;
+}
+.middle {
+  padding: 1rem;
+  grid-area: middle;
+}
+
+.itemtitle {
+  padding: 1rem;
+}
+.abouttitle {
+  margin-top: 1rem;
+  font-size: small;
+}
+
+.aboutitem {
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+.aboutitem li {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  list-style: initial;
+}
+
+.rightside {
+  margin-right: 2rem;
+  margin-left: 1rem;
+  border: solid 0.1px rgb(163, 163, 163);
+  border-radius: 10px;
+  grid-area: rightside;
+  height: 900px;
+}
+
+
+
+
+
+/* Big Images and below */
+.botgrid {
+  padding-left: 1rem;
+}
+.botheadline {
+  color:rgb(214,102,0);
+  padding: 1rem 1rem 1rem 0rem;
+  font-size: 0.9rem;
+  font-family: verdana, Arial, Helvetica, sans-serif;
+}
+.connectedImages {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+#wideimg {
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+#innerimg {
+  position: absolute;
+  left: 32.5%;
+  top: 190%;
+  height: 28rem;
+}
